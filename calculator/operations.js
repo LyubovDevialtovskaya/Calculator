@@ -1,6 +1,4 @@
-type Operation = '+' | '-' | '*' | '/';
-
-export const calculator = (a: number, op: Operation, b: number): number => {
+function operations (a, op, b){
   switch (op) {
     case '*':
       return a * b;
@@ -12,3 +10,4 @@ export const calculator = (a: number, op: Operation, b: number): number => {
       return a / b;
   }
 }
+module.exports = operations;
